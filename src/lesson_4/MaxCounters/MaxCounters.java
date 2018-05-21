@@ -7,12 +7,17 @@
 class Solution {
     public int[] solution(int N, int[] A) {
 
+        //for final roop
         int max = 0;
 
+        //for current roop
         int tmp = 0;
 
         int [] result = new int [N];
 
+        //for current max
+        //if there is no consecutive operation,
+        //you dont need to care about.
         for (int i = 0; i < A.length; i++) {
 
             if (A[i] >= 1 && A[i] <= N) {
@@ -29,6 +34,8 @@ class Solution {
 
         }
 
+        //for index which had not consecutive operation
+        //after last max counters
         for (int j = 0; j < result.length; j++) {
 
             result[j] = Math.max(max, result[j]);
