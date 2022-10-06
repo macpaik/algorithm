@@ -1,3 +1,5 @@
+// https://algospot.com/judge/problem/read/CLOCKSYNC
+
 import java.util.Arrays;
 import java.util.Scanner;
 
